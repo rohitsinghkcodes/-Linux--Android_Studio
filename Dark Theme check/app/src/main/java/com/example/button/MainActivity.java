@@ -21,6 +21,7 @@ Button btn;
             public void onClick(View v) {
                 Intent i =new Intent(MainActivity.this,darkActivity.class);
                 startActivity(i);
+                finish();
             }
         });
     }

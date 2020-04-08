@@ -19,6 +19,7 @@ Button btn;
             public void onClick(View v) {
                 Intent i = new Intent(darkActivity.this,MainActivity.class);
                 startActivity(i);
+                finish();
             }
         });
     }
