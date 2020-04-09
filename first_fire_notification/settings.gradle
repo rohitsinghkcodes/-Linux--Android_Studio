@@ -1,0 +1,2 @@
+rootProject.name='first_fire_notification'
+include ':app'
