@@ -9,17 +9,18 @@
         app:showAsAction="ifRoom">
         <menu>
             <item
-                android:id="@+id/exit"
-                android:icon="@drawable/ic_exit"
-                android:title="Exit"
-                app:showAsAction="never"
-                />
-            <item
                 android:id="@+id/about"
                 android:icon="@drawable/ic_info_outline_black_24dp"
                 android:title="About"
                 app:showAsAction="never"
                 />
+            <item
+                android:id="@+id/exit"
+                android:icon="@drawable/ic_exit"
+                android:title="Exit"
+                app:showAsAction="never"
+                />
+
         </menu>
 
     </item>

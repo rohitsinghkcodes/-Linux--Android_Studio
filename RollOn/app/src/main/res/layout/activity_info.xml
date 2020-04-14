@@ -24,8 +24,8 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="384dp"
-        android:layout_height="318dp"
+        android:layout_width="349dp"
+        android:layout_height="331dp"
         android:text="You have 10 chances to roll the dice.\nThe score will be added to the total points appearing at the right corner after every roll.\nScore as much as you can in 10 taps.\n\nTO START ROLLING TAP ON THE FINGER ICON."
         android:textAlignment="center"
         android:textColor="#9FEF588C"

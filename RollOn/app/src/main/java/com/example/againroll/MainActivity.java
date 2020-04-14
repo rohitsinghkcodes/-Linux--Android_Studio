@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         switch(item.getItemId())
         {
             case R.id.exit:
-                super.onBackPressed();
+                MainActivity.super.onBackPressed();
                 return true;
             case R.id.about:
                 Intent i =new Intent(MainActivity.this,info.class);
@@ -65,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
         tv3.setText(defno2+"");
 
 
-
         img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
                     String valueNew = Integer.toString(count);
                     intent.putExtra("final_val",valueNew);
                     startActivity(intent);
+                    MainActivity.this.finish();
                 }
             }
         });
