@@ -3,7 +3,7 @@
     <color name="colorPrimary">#2196F3</color>
     <color name="colorPrimaryDark">#3F51B5</color>
     <color name="colorAccent">#03DAC5</color>
-    <color name="DarkBlue">#3F51B5</color>
+    <color name="DarkBlue">#034275</color>
     <color name="LightBlue">#6ABDFF</color>
     <color name="BackBlue">#B43982BC</color>
     <color name="Yellow">#FFC107</color>
@@ -11,6 +11,5 @@
     <color name="PinkCard">#BFFA3779</color>
     <color name="greenCard">#BF45E44C</color>
     <color name="OrangeCard">#BFF17953</color>
-    <color name="offwhile">#C5C0C0</color>
     <color name="white">#ffffff</color>
 </resources>

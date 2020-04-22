@@ -7,13 +7,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    ListView list;
+    GridView gridView;
     ListAdap myAdapter;
     ArrayList<String> data = new ArrayList<>();
     ArrayList<Integer> colors = new ArrayList<>();
@@ -23,10 +24,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        list = findViewById(R.id.list);
+        gridView = findViewById(R.id.grid);
         myAdapter = new ListAdap();
 
-        list.setAdapter(myAdapter);
+        gridView.setAdapter(myAdapter);
 
         data.add("ROHIT SINGH");
         data.add("RITU SINGH");
@@ -40,18 +41,17 @@ public class MainActivity extends AppCompatActivity {
         data.add("AMBUJ SINGH");
         data.add("ARSHARAJ CHAUHAN");
 
+        data.add("KISHAN SHRIVASTAVA");
+        data.add("HRITIK ARORA");
+        data.add("SAHIL SHHRIVASTAVA");
+        data.add("VIBHOR TYAGI");
+        data.add("SHRAVAN PURWAR");
+        data.add("SACHIN BAGHEL");
 
         colors.add(R.color.PinkCard);
         colors.add(R.color.OrangeCard);
         colors.add(R.color.greenCard);
-        colors.add(R.color.PinkCard);
-        colors.add(R.color.OrangeCard);
-        colors.add(R.color.greenCard);;
-        colors.add(R.color.PinkCard);
-        colors.add(R.color.OrangeCard);
-        colors.add(R.color.greenCard);
-        colors.add(R.color.PinkCard);
-        colors.add(R.color.OrangeCard);
+
 
 
     }
@@ -79,8 +79,9 @@ public class MainActivity extends AppCompatActivity {
             View v = LayoutInflater.from(getApplicationContext()).inflate(R.layout.itemlayout, null);
             TextView initial = v.findViewById(R.id.initial);
             TextView name = v.findViewById(R.id.name);
-            initial.setBackgroundColor(getResources().getColor(colors.get(position)));
-            name.setBackgroundColor(getResources().getColor(colors.get(position)));
+            int pos = position%colors.size();
+            initial.setBackgroundColor(getResources().getColor(colors.get(pos)));
+            name.setBackgroundColor(getResources().getColor(colors.get(pos)));
 
             initial.setText(data.get(position).charAt(0) + "");
             name.setText(data.get(position));
