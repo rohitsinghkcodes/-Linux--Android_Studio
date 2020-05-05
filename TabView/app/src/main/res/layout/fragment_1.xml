@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment_1"
+    android:background="@color/color_1"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                 android:fontFamily="monospace"
+                android:text="Shiva gazed at the orange sky. The clouds hovering above Mansarovar had just parted to reveal the
+        setting sun. The brilliant giver of life was calling it a day once again. Shiva had seen a few sunrises in his
+        twenty-one years. But the sunset! He tried never to miss the sunset! On any other day, Shiva would have
+        taken in the vista — the sun and the immense lake against the magnificent backdrop of the Himalayas
+        stretching as far back as the eye could see. But not today.\n
+        He squatted and perched his lithe, muscular body on the narrow ledge extending over the lake. The
+        numerous batde-scars on his skin gleamed in the shimmering reflected light of the waters. Shiva
+        remembered well his carefree childhood days. He had perfected the art of throwing pebbles that bounced
+        off the surface of the lake. He still held the record in his tribe for the highest number of bounces:
+        seventeen.\n
+        On a normal day, Shiva would have smiled at the memory from a cheerful past that had been
+        overwhelmed by the angst of the present. But today, he turned back towards his village without any hint of
+        joy.\n
+        Bhadra was alert, guarding the main entrance. Shiva gestured with his eyes. Bhadra turned back to find
+        his two back-up soldiers dozing against the fence. He cursed and kicked them hard.
+        Shiva turned back towards the lake.\n
+        God bless Bhadra! At least he takes some responsibility.\n
+        Shiva brought the chillum made of yak-bone to his hps and took in a deep drag. Any other day, the
+        marijuana would have spread its munificence, dulling his troubled mind and letting him find some
+        moments of solace. But not today.\n
+        He looked left, at the edge of the lake where the soldiers of the strange foreign visitor were kept under
+        guard. With the lake behind them and twenty of Shiva’s own soldiers guarding them, it was impossible for
+        them to mount any surprise attack.\n
+        They let themselves be disarmed so easily. They aren’t like the bloodthirsty idiots in our land who are
+        looking for any excuse to fight.\n
+        The foreigner’s words came flooding back to Shiva. ‘Come to our land. It lies beyond the great
+        mountains. Others call it Meluha. I call it Heaven. It is the richest and most powerful empire in India.
+        Indeed the richest and most powerful in the whole world. Our government has an offer for immigrants.
+        You will be given fertile land and resources for farming. Today, your tribe, the Gunas, fight for survival
+        in this rough, arid land. Meluha offers you a lifestyle beyond your wildest dreams. We ask for nothing in
+        return. Just live in peace, pay your taxes and follow the laws of the land.’\n
+        Shiva mused that he would certainly not be a chief in this new land.\n
+        Would I really miss that so much?\n\n
+        His tribe would have to live by the laws of the foreigners. They would have to work every day for a
+        living.\n
+        That’s better than fighting every day just to stay alive!\nShiva took another puff from his chillum. As the smoke cleared, he turned to stare at the hut in thecentre of his village, right next to his own, where the foreigner had been stationed. He had been told that
+        he could sleep there in comfort. In fact, Shiva wanted to keep him hostage. Just in case.\n
+        We fight almost every month with the Pakratis just so that our village can exist next to the holy lake.
+        They are getting stronger every year, forming new alliances with new tribes. We can beat the Pakratis, but
+        not all the mountain tribes together! By moving to Meluha, we can escape this pointless violence and may
+        be live a life of comfort. What could possibly be wrong with that? Why shouldn’t we take this deal? It
+        sounds so damn good!\n
+        Shiva took one last drag from the chillum before banging it on the rock, letting the ash slip out and rose
+        quickly from his perch. Brushing a few specks of ash from his bare chest, he wiped his hands on his tiger
+        skin skirt, rapidly striding to his village. Bhadra and his back-up stood to attention as Shiva passed the
+        gate. Shiva frowned and gestured for Bhadra to ease up.\n
+        Why does he keep forgetting that he has been my closestfriend since childhood? My becoming the chief
+        hasn’t really changed anything. He doesn’t need to behave unnecessarily servile in front of others.
+        The huts in Shiva’s village were luxurious compared to others in their land. A grown man could
+        actually stand upright in them. The shelter could withstand the harsh mountain winds for nearly three years
+        before surrendering to the elements. He flung the empty chillum into his hut as he strode to the hut where
+        the visitor lay sleeping soundly."
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
