@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".timer"
+    android:background="@color/grey">
+    <TextView
+        android:id="@+id/startCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="450dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/yellow1"
+        android:fontFamily="serif-monospace"
+        />
+    <TextView
+        android:id="@+id/finalmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FINISHED"
+        android:textSize="60dp"
+        android:fontFamily="serif-monospace"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="invisible"
+        />
+</RelativeLayout>
