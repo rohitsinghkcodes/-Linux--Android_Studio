@@ -11,21 +11,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3"
-        android:textSize="450dp"
+        android:textSize="330dp"
         android:layout_centerInParent="true"
         android:textColor="@color/yellow1"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="@font/aclonica"
         />
+
     <TextView
-        android:id="@+id/finalmsg"
+        android:id="@+id/countDown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FINISHED"
-        android:textSize="60dp"
-        android:fontFamily="serif-monospace"
         android:layout_centerInParent="true"
-        android:gravity="center"
-        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/aclonica"
+        android:text="10:00"
+        android:textColor="@color/pink1"
+        android:textSize="70dp"
+        android:visibility="invisible" />
+    <Button
+        android:id="@+id/finalbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOP"
+        android:layout_centerInParent="true"
         android:visibility="invisible"
+        android:textColor="@color/white"
+        android:background="@drawable/custombtn"
         />
 </RelativeLayout>
