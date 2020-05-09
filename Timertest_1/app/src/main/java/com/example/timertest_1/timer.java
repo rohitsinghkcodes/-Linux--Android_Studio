@@ -134,6 +134,7 @@ public class timer extends AppCompatActivity {
                             onStopSound();
                             Intent m = new Intent(timer.this,MainActivity.class);
                             startActivity(m);
+                            timer.this.finish();
                         }
                     });
                 }
