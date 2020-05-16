@@ -33,7 +33,7 @@ public class timer extends AppCompatActivity {
         if(backPressedTime + 2000 > System.currentTimeMillis() )
         {
             backToast.cancel();
-            super.onBackPressed();
+            timer.super.onBackPressed();
             return;
         }
         else
@@ -81,6 +81,8 @@ public class timer extends AppCompatActivity {
         finalSound = soundPool.load(this,R.raw.final_sound,1);
 
 
+
+
         //For start timer
             countDownTimer = new CountDownTimer(4000, 1000) {
                 @Override
@@ -95,26 +97,26 @@ public class timer extends AppCompatActivity {
                     countDown.setVisibility(View.VISIBLE);
 
                     //CountDown timer
-                    startStop();
+                    startTimer();
                 }
             }.start();
 
             updateTimer();
+
+        finalBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onStopSound();
+                Intent m = new Intent(timer.this,MainActivity.class);
+                startActivity(m);
+            }
+        });
+
         }
 
-        public void startStop()
-        {
-            if(timeRunning)
-            {
-              stoptimer();
-            }
-            else
-            {
-             starttimer();
-            }
-        }
 
-        public void starttimer()
+
+        public void startTimer()
         {
             countDownTimer = new CountDownTimer(timeLeftInMillis+1000,1000) {
                 @Override
@@ -128,23 +130,9 @@ public class timer extends AppCompatActivity {
                     soundPool.play(finalSound,1,1,1,-1,0);
                     countDown.setVisibility(View.GONE);
                     finalBtn.setVisibility(View.VISIBLE);
-                    finalBtn.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            onStopSound();
-                            Intent m = new Intent(timer.this,MainActivity.class);
-                            startActivity(m);
-                            timer.this.finish();
-                        }
-                    });
                 }
             }.start();
-        }
 
-        public void stoptimer()
-        {
-            countDownTimer.cancel();
-            timeRunning = false;
         }
 
         public void updateTimer()
@@ -182,4 +170,5 @@ public class timer extends AppCompatActivity {
         soundPool.release();
         soundPool= null;
     }
+
 }

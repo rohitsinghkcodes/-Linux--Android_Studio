@@ -16,13 +16,13 @@ public class MainActivity extends AppCompatActivity {
     Button startbtn;
     EditText input;
     private Toast backToast;
+
     @Override
     public void onBackPressed() {
         if(backPressedTime + 2000 > System.currentTimeMillis() )
         {
             backToast.cancel();
-            super.onBackPressed();
-            return;
+            MainActivity.super.onBackPressed();
         }
         else
         {
@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
         input = findViewById(R.id.input);
 
 
-
         startbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    //long millisInput = Long.parseLong(i)*60000;
                     intent.putExtra("time",i);
                     startActivity(intent);
                     finish();
